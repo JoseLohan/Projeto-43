@@ -24,7 +24,6 @@ class Security {
     this.button3.position(100,320);
     this.button3.style("background", 'lightgrey');
 
-    // Adicione código para criar e posicionar a terceira caixa de entrada e botão
   }
 
   display() {

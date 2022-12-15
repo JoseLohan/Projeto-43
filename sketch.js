@@ -1,16 +1,15 @@
-var bg1, form, system, code, security;
+var bg1, bg2, form, system, code, security;
 var score = 0;
 
 function preload() {
   bg1 = loadImage("aladdin_cave.jpg");
-
-  // Adicione código para carregar imagem do plano de fundo do tesouro
+  bg2 = loadImage("treasure.jpg");
 }
 
 function setup() {
   createCanvas(1000, 500);
-  security = new Security();
   system = new System();
+  security = new Security();
 }
 
 function draw() {
@@ -24,12 +23,12 @@ function draw() {
   if (score === 3) {
     clear();
 
-    // Adicione código para alterar o plano de fundo para o plano de fundo do tesouro
-
+    background(bg2);
     fill("white");
     textSize(40);
-
-    // Adicione código para exibir texto "TESOURO ENCONTRADO"
+    textSize(20);
+    fill("white");
+    text("TESOURO ENCONTRADO", 250, 200);
   }
 
   drawSprites();
