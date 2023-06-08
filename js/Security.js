@@ -16,14 +16,14 @@ class Security {
     this.button2.position(700, 220);
     this.button2.style("background", "lightgrey");
 
-    this.access2 = createInput("");
-    this.access2.position(100, 290);
-    this.access2.style("background", "white");
+    this.access3 = createInput("");
+    this.access3.position(100, 290);
+    this.access3.style("background", "white");
 
-    this.button3 = createButton('verificar');
-    this.button3.position(100,320);
-    this.button3.style("background", 'lightgrey');
-
+    this.button3 = createButton("Testar");
+    this.button3.position(100, 320);
+    this.button3.style("background", "lightgrey");
+    // Adicione código para criar e posicionar a terceira caixa de entrada e botão
   }
 
   display() {
@@ -50,6 +50,6 @@ class Security {
         score++;
       }
     });
-    
+
   }
 }
